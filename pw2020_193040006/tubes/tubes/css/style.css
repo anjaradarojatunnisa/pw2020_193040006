@@ -1,0 +1,45 @@
+body {
+  background-image: url('../img/background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.text-success {
+  color: pink !important;
+}
+
+.bg-success {
+  background-color: pink !important;
+}
+
+.btn-outline-secondary {
+  border-color: pink;
+  color: pink;
+  background-color: white;
+}
+
+.btn-outline-secondary:hover {
+  border-color: pink;
+  background-color: pink;
+}
+
+.btn-outline-primary {
+  border-color: lightblue;
+  color: lightblue;
+}
+
+.btn-outline-primary:hover {
+  border-color: lightblue;
+  background-color: lightblue;
+}
+
+.bg-primary {
+  background-color: lightblue !important;
+}
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active {
+  background-color: lightblue !important;
+  border-color: lightblue;
+}
