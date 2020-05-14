@@ -54,7 +54,7 @@
 				<h1> INDEX KULIAH </h1>
 				<hr>
 				<p>
-					tugas latihan pertemuan ke4,akang jangan lupa makan hehehe,maaf becanda kang:)
+					semangat!!!
 				</p>				
 				<a href="kuliah" class="continue-lendo">Selengkapnya → </a>
 			</div>			
@@ -66,7 +66,7 @@
 				<h1> INDEX PRAKTIKUM </h1>
 				<hr>
 				<p>
-					tugas latihan pertemuan ke4,akang jangan lupa makan hehehe,maaf becanda kang:)
+					semangat!!!
 				</p>				
 				<a href="praktikum" class="continue-lendo">Selengkapnya → </a>
 			</div>			
@@ -78,7 +78,7 @@
 				<h1> INDEX TUGAS BESAR </h1>
 				<hr>
 				<p>
-					tugas latihan pertemuan ke4,akang jangan lupa makan hehehe,maaf becanda kang:)
+					have a nice day!!!
 				</p>				
 				<a href="tubes" class="continue-lendo">Selengkapnya → </a>
 			</div>			
