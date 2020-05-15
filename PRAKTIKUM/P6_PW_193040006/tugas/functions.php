@@ -1,6 +1,6 @@
 <?php
 // koneksi ke database
-$conn = mysqli_connect("localhost", "root", "", "tubes_193040006");
+$conn = mysqli_connect("localhost", "root", "", "tugasbesar_193040006");
 
 
 function query($query) {
