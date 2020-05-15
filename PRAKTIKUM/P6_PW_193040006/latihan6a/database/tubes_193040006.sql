@@ -1,15 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.1
+-- version 4.9.0.1
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Apr 14, 2020 at 06:19 PM
--- Server version: 10.4.11-MariaDB
--- PHP Version: 7.3.14
+-- Host: localhost:3306
+-- Generation Time: May 11, 2020 at 12:24 PM
+-- Server version: 5.7.26
+-- PHP Version: 7.3.7
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
-START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -19,7 +17,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `tugasbesar_193040006`
+-- Database: `tubes_193040006`
 --
 
 -- --------------------------------------------------------
@@ -42,7 +40,7 @@ CREATE TABLE `elektronik` (
 --
 
 INSERT INTO `elektronik` (`id`, `nama`, `warna`, `stok`, `harga`, `gambar`) VALUES
-(1, 'handphone', 'biru', '10', '2.000.000', 'hp.jpg'),
+(1, 'handp', 'biru', '10', '2.000.000', 'hp.jpg'),
 (2, 'blender', 'hitam', '100', '3.000.000', 'blender.jpg'),
 (3, 'kulkas', 'silver', '5', '9.000.0000', 'kulkas.jpg'),
 (4, 'mesin cuci', 'silver', '10', '5.000.000', 'mesinv.jpg'),
@@ -52,6 +50,26 @@ INSERT INTO `elektronik` (`id`, `nama`, `warna`, `stok`, `harga`, `gambar`) VALU
 (8, 'kamera', 'hitam', '4', '11.000.000', 'kamera.jpg'),
 (9, 'ricecooker', 'pink ', '10', '5.000.000', 'm.jpg'),
 (10, 'setrika', 'putih', '6', '500.000', 'setrika.jpg');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `user`
+--
+
+CREATE TABLE `user` (
+  `id` int(11) UNSIGNED NOT NULL,
+  `username` varchar(255) DEFAULT NULL,
+  `password` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `user`
+--
+
+INSERT INTO `user` (`id`, `username`, `password`) VALUES
+(2, 'admin', '$2y$10$Se7x5Amk/ruw2y28pdpfTOJSm/7X5.fbi2DrwuH.inFg89nqwpdHm'),
+(3, 'niki', '$2y$10$a5oe/lQHsfjvLVI5SFAkYequzZj7TeybDQua4ww.X4U68nYvRvE/.');
 
 --
 -- Indexes for dumped tables
@@ -64,6 +82,12 @@ ALTER TABLE `elektronik`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `user`
+--
+ALTER TABLE `user`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -71,8 +95,13 @@ ALTER TABLE `elektronik`
 -- AUTO_INCREMENT for table `elektronik`
 --
 ALTER TABLE `elektronik`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
-COMMIT;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+
+--
+-- AUTO_INCREMENT for table `user`
+--
+ALTER TABLE `user`
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

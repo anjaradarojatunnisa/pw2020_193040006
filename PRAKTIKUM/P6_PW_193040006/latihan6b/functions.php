@@ -1,7 +1,7 @@
 <?php 
 function koneksi() {
 	 $conn = mysqli_connect("localhost", "root", "") or die ("koneksi ke DB gagal");
-	  mysqli_select_db($conn, "tugasbesar_193040006") or die ("Database salah!");
+	  mysqli_select_db($conn, "tubes_193040006") or die ("Database salah!");
 	  
 	  return $conn;
 	}

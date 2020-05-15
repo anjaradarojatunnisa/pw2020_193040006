@@ -1,6 +1,12 @@
 <?php
-// koneksi ke database
-$conn = mysqli_connect("localhost", "root", "", "tugasbesar_193040006");
+// Koneksi database
+function koneksi(){
+	$host     = 'localhost';
+	$username = 'root';
+	$password = '';
+	$db       = 'tubes_193040006';
+  
+  
 
 
 function query($query) {
